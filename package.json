@@ -1,0 +1,52 @@
+{
+  "name": "wahyoo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test2": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "jest",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrarnaim015/wahyoo-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abrarnaim015/wahyoo-test/issues"
+  },
+  "homepage": "https://github.com/abrarnaim015/wahyoo-test#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "apollo-server": "^3.6.7",
+    "apollo-server-express": "^3.6.7",
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "graphql": "^16.3.0",
+    "ioredis": "^5.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "redis": "^4.0.6",
+    "sequelize": "^6.19.0",
+    "sequelize-cli": "^6.4.1",
+    "sinon": "^13.0.2"
+  }
+}
