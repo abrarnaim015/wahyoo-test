@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   UserBank.prototype.generatePasswordHash = function () {
     if (this.password) {
-      return bcrypt.hash(this.password, process.env.BCRYPT);
+      return bcrypt.hash(this.password, +process.env.BCRYPT);
     }
   };
   UserBank.associate = function (models) {
